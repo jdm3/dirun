@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dirun", "src\dirun.csproj", "{57F48FAC-0386-46AE-BBDA-570D7D26F598}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dirunlib", "src\dirunlib.csproj", "{13A78A45-C4CD-4704-8D55-99797E47BBE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57F48FAC-0386-46AE-BBDA-570D7D26F598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F48FAC-0386-46AE-BBDA-570D7D26F598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F48FAC-0386-46AE-BBDA-570D7D26F598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F48FAC-0386-46AE-BBDA-570D7D26F598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A78A45-C4CD-4704-8D55-99797E47BBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A78A45-C4CD-4704-8D55-99797E47BBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A78A45-C4CD-4704-8D55-99797E47BBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A78A45-C4CD-4704-8D55-99797E47BBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF77BCDD-71D3-4BB4-9A53-597B93AEDD82}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <OutputPath>$(SolutionDir)\build\$(Configuration)</OutputPath>
+    <BaseIntermediateOutputPath>$(SolutionDir)\build\tmp\$(ProjectName)</BaseIntermediateOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <ItemGroup>
+    <Compile Remove="command.cs" />
+    <Compile Remove="console.cs" />
+    <Compile Remove="dirunlib.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="dirunlib.csproj" />
+  </ItemGroup>
+
+</Project>

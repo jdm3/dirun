@@ -15,21 +15,21 @@ options:
     --verbose       Print extra information during execution
 ```
 
-If the *Command* requires redirection operators (>, >>, or &) then they need to be escaped using the '^' character. e.g.:
+If the command requires redirection operators (>, >>, or &) then they need to be escaped using the '^' character. e.g.:
 
 ```bat
 :: foo.exe > res.out
 > dirun.exe -- foo.exe ^> res.out
 ```
 
-If the *Command* requires double quotes, then they need to be escaped using two double quotes '""'. e.g.:
+If the command requires double quotes, then they need to be escaped using two double quotes '""'. e.g.:
 
 ```bat
 :: foo.exe --arg="this has spaces"
 > dirun.exe -- foo.exe --arg="""this has spaces"""
 ```
 
-To customize the execution for each target file, `COMMAND` and `--working` can be specified using the following variables:
+To customize the execution for each target file, the command and the working directory can be specified using variables:
 
 | Variable                | Will be replaced with... |
 | ----------------------- | ------------------------ |
@@ -37,4 +37,4 @@ To customize the execution for each target file, `COMMAND` and `--working` can b
 | **%DIRUN\_FEXT%**       | The extension of the target file (without the initial period). |
 | **%DIRUN\_FPATH%**      | The full path to the target file. |
 | **%DIRUN\_DPATH%**      | The full path to the directory containing the target file (without a trailing directory separator). |
-| **%DIRUN\_?PATH\_REL%** | Any of the above variables ending in *PATH* also have a version that ends in *PATH\_REL* which is the path relative to the root search *Directory*. |
+| **%DIRUN\_?PATH\_REL%** | For each of the above variables ending in *PATH*, there is also a variable that ends in *PATH\_REL* which is the path relative to the root search directory (*DIR*). |

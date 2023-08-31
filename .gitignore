@@ -1,3 +1,4 @@
 /build/
-.vs/
-Properties/
+/.vs/
+/src/Properties/
+/src/GVT_GitVersion.cs

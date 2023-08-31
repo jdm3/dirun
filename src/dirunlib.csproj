@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Compile Remove="dirun.cs" />
+    <Compile Remove="GVT_GitVersion.cs" />
   </ItemGroup>
 
 </Project>

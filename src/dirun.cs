@@ -24,6 +24,7 @@ internal class Program
         Console.WriteLine("    --norecurse     Don't recurse into subdirectories");
         Console.WriteLine("    --repfile       Report status using the target file name, rather than the command");
         Console.WriteLine("    --verbose       Print extra information during execution");
+        Console.WriteLine($"build: {GVT.COMMIT}");
     }
 
     public static int Main(string[] args)

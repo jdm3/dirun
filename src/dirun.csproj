@@ -16,6 +16,11 @@
 
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
 
+  <PropertyGroup>
+    <GVT_ReadBranch>false</GVT_ReadBranch>
+  </PropertyGroup>
+  <Import Project="..\ext\GVT\GitVersion.targets" />
+
   <ItemGroup>
     <Compile Remove="command.cs" />
     <Compile Remove="console.cs" />
@@ -25,5 +30,4 @@
   <ItemGroup>
     <ProjectReference Include="dirunlib.csproj" />
   </ItemGroup>
-
 </Project>
